@@ -2,6 +2,7 @@
 
 :root {
 	--decoprinc: #b28756;
+	--bgcolor: #000;
 }
 
 * {
@@ -12,6 +13,7 @@
 
 body {
 	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
 }
 
 header {
@@ -58,15 +60,17 @@ header {
 .menu li a {
 	color: #fff;
 	text-transform: uppercase;
-	font-weight: bold;
+	font-weight: 600;
 	text-decoration: none;
-	padding-left: 5px;
-	padding-right: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
 	height: 100px;
 	display: flex;
 	align-items: center;
+	border-bottom: 5px solid var(--bgcolor);
 }
 
-.menu li a:hover {
+.menu li a:hover,
+.menu .active a {
 	border-bottom: 5px solid var(--decoprinc);
 }
