@@ -96,11 +96,11 @@ header {
 }
 
 .banner .slide {
-	width: 100vw;
+	width: calc(100vw + 4px);
 	height: 100%;
 	display: inline-block;
 	background-color: rgba(0,0,0,0.8);
-	margin: 0;
+	margin-left: -4px;
 }
 
 .banner .slidearea {
