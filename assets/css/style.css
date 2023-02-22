@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 
 :root {
-	--decoprinc: #b28756;
-	--bgcolor: #000;
+	--decoPrinc: #b28756;
+	--bgColor: #000;
+	--fgColor: #fff;
+	--destaMenu: #ccc;
 }
 
 * {
@@ -18,8 +20,8 @@ body {
 
 header {
 	height: 100px;
-	background-color: #000;
-	color: #fff;
+	background-color: var(--bgColor);
+	color: var(--fgColor);
 }
 
 .header {
@@ -58,7 +60,7 @@ header {
 }
 
 .menu li a {
-	color: #fff;
+	color: var(--fgColor);
 	text-transform: uppercase;
 	font-weight: 600;
 	text-decoration: none;
@@ -67,10 +69,17 @@ header {
 	height: 100px;
 	display: flex;
 	align-items: center;
-	border-bottom: 5px solid var(--bgcolor);
+	border-bottom: 5px solid var(--bgColor);
 }
 
 .menu li a:hover,
 .menu .active a {
-	border-bottom: 5px solid var(--decoprinc);
+	border-bottom: 5px solid var(--decoPrinc);
+	color: var(--destaMenu);
+}
+
+.banner {
+	/*height: 100vh;*/
+	height: calc(100vh - 100px);
+	background-color: red;
 }
