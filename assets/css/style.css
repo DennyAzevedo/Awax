@@ -13,6 +13,7 @@
 	--titColorLight: #000;
 	--bgDefDark: #000;
 	--titColorDark: #fff;
+	--textService: #999;
 }
 
 * {
@@ -58,11 +59,11 @@ body {
 }
 
 .default .section-title {
-	font-size: 20px;
+	font-size: 22px;
 }
 
 .default .section-desc {
-	font-size: 12px;
+	font-size: 14px;
 	color: var(--descColorLight);
 	margin-top: 10px;
 	margin-bottom: 40px
@@ -259,4 +260,35 @@ header {
 .section-aboutus--right img {
 	width: 480px;
 	box-shadow: 15px 15px 15px #aaa9a9;
+}
+
+/*
+	section - Services
+*/
+.section-services {
+	display: flex;
+}
+
+.section-service {
+	flex: 1;
+	text-align: center;
+	border-right: 1px solid var(--textService);
+	padding: 15px;
+}
+
+.section-service:first-child {
+	border-left: 1px solid var(--textService);
+}
+
+.section-service h4 {
+	margin-top: 20px;
+	text-transform: uppercase;
+	font-size: 16px;
+	padding: 0 45px;
+}
+
+.section-service p {
+	margin-top: 10px;
+	font-size: 13px;
+	color: var(--textService);
 }
